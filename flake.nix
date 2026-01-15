@@ -5,9 +5,10 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
-  outputs = { nixpkgs, ... }: let
+  outputs = {nixpkgs, ...}: let
     pkgs = nixpkgs.legacyPackages.aarch64-darwin;
   in {
-    day01 = import ./day01 { inherit pkgs; };
+    day01 = import ./day01 {inherit pkgs;};
+    day02 = import ./day02 {inherit pkgs;};
   };
 }
