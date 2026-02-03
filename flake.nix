@@ -16,5 +16,6 @@
     day06 = import ./day06 {inherit pkgs;};
     day07 = import ./day07 {inherit pkgs;};
     day08 = import ./day08 {inherit pkgs;};
+    day09 = import ./day09 {inherit pkgs;};
   };
 }
